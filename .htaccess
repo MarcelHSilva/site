@@ -1,0 +1,13 @@
+# Usar index.html como página inicial
+DirectoryIndex index.html
+
+# Codificação padrão
+AddDefaultCharset UTF-8
+
+# Desativar listagem de diretórios
+Options -Indexes
+
+# Forçar HTTPS (se SSL estiver ativo)
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
