@@ -1,0 +1,1 @@
+# No Python deps required for static site
