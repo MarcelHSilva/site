@@ -1,0 +1,6 @@
+# Ignore git folder and local artifacts
+.git
+node_modules
+npm-debug.log
+dist
+build
